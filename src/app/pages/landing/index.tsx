@@ -1,4 +1,4 @@
-import { Presentation } from "../../organisms/presentation";
+import { Presentation } from "@/organisms/presentation";
 
 export const LandingPage = () => {
     return (
