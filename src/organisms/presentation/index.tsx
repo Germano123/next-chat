@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import classNames from 'classnames';
 import Image from "next/image";
 import { PuffLoader } from "react-spinners";
+import { ChatConnect } from "@/services/chat-connection";
 
 const MessageComponent = ({ content, isSent }: any) => {
     const messageClasses = classNames(
@@ -38,11 +39,14 @@ export const Presentation = () => {
     const [messages, setMessages] = useState(mockMessages);
 
     useEffect(() => {
-        // Simulate a load event
-        setTimeout(() => {
-            setLoading(false);
-            // setMessages(mockMessages);
-        }, 1200);
+        ChatConnect().then((connection) => {
+            connection.onopen = () => {
+                console.log('WebSocket Client Connected');
+                setLoading(false);
+                console.log("Loading messages...");
+                // setMessages(mockMessages);
+            }
+        });
     }, []);
 
     const sendMessage = () => {
@@ -93,7 +97,7 @@ export const Presentation = () => {
                                 key={ `message-${ index }` }
                                 content={ msg.content }
                                 isSent={ msg.isSent }
-                                /> 
+                            /> 
                             })
                         }
                     </div>
