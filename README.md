@@ -1,7 +1,9 @@
 # Pera Chat
 Tihs project was made to practice Chat interactions with websockets.
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Screenshots
+
+![Screenshot01](application/Screenshot01.png "Screenshot 01")
 
 ## Getting Started
 First, run the development server:
