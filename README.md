@@ -19,6 +19,13 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## Introducing AbacatePay
+
+[AbacatePay](https://www.abacatepay.com/) is a payment gateway designed to simplify the integration of PIX transactions into your projects. With its clear documentation and intuitive API, AbacatePay enables quick and efficient payment processing, allowing you to focus on developing your application without the complexities of payment system integration. We encourage you to explore AbacatePay and consider contributing to its ongoing development.
+
+### Why am I promoting them?  
+Simply because I loved their concept, the tool’s usability, and I want to contribute to its growth.
+
 ## Learn More
 To learn more about Next.js, take a look at the following resources:
 
